@@ -1,0 +1,6 @@
+framework module Pods_Project_Camouflage {
+  umbrella header "Pods-Project Camouflage-umbrella.h"
+
+  export *
+  module * { export * }
+}

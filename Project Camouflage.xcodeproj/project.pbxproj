@@ -12,6 +12,9 @@
 		07736C6B21CF42A200EE1476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07736C6921CF42A200EE1476 /* Main.storyboard */; };
 		07736C6D21CF42A400EE1476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07736C6C21CF42A400EE1476 /* Assets.xcassets */; };
 		07736C7021CF42A400EE1476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07736C6E21CF42A400EE1476 /* LaunchScreen.storyboard */; };
+		07F36D2821D0B18400AE2827 /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F36D2721D0B18400AE2827 /* libz.1.1.3.tbd */; };
+		07F36D2C21D0B62C00AE2827 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 07F36D2B21D0B62C00AE2827 /* tessdata */; };
+		D77E970261E88B7A43C1959C /* Pods_Project_Camouflage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9444BAFC51E5DE2ADCCE3EB7 /* Pods_Project_Camouflage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		07736C6C21CF42A400EE1476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07736C6F21CF42A400EE1476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07736C7121CF42A400EE1476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F36D2721D0B18400AE2827 /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
+		07F36D2B21D0B62C00AE2827 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		0A04733EF28EB5C87D760BB9 /* Pods-Project Camouflage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project Camouflage.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project Camouflage/Pods-Project Camouflage.release.xcconfig"; sourceTree = "<group>"; };
+		306951BBB1BA83E02FFA43D4 /* Pods-Project Camouflage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project Camouflage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project Camouflage/Pods-Project Camouflage.debug.xcconfig"; sourceTree = "<group>"; };
+		9444BAFC51E5DE2ADCCE3EB7 /* Pods_Project_Camouflage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_Camouflage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F36D2821D0B18400AE2827 /* libz.1.1.3.tbd in Frameworks */,
+				D77E970261E88B7A43C1959C /* Pods_Project_Camouflage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +50,8 @@
 			children = (
 				07736C6421CF42A200EE1476 /* Project Camouflage */,
 				07736C6321CF42A200EE1476 /* Products */,
+				9304FAF1B274ECFBE3D6960D /* Pods */,
+				BB0263AC822C293FE51F3890 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +66,7 @@
 		07736C6421CF42A200EE1476 /* Project Camouflage */ = {
 			isa = PBXGroup;
 			children = (
+				07F36D2B21D0B62C00AE2827 /* tessdata */,
 				07736C6521CF42A200EE1476 /* AppDelegate.swift */,
 				07736C6721CF42A200EE1476 /* ViewController.swift */,
 				07736C6921CF42A200EE1476 /* Main.storyboard */,
@@ -64,6 +77,24 @@
 			path = "Project Camouflage";
 			sourceTree = "<group>";
 		};
+		9304FAF1B274ECFBE3D6960D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				306951BBB1BA83E02FFA43D4 /* Pods-Project Camouflage.debug.xcconfig */,
+				0A04733EF28EB5C87D760BB9 /* Pods-Project Camouflage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB0263AC822C293FE51F3890 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07F36D2721D0B18400AE2827 /* libz.1.1.3.tbd */,
+				9444BAFC51E5DE2ADCCE3EB7 /* Pods_Project_Camouflage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07736C7421CF42A400EE1476 /* Build configuration list for PBXNativeTarget "Project Camouflage" */;
 			buildPhases = (
+				F0FC9D6433C0E3E46B658E22 /* [CP] Check Pods Manifest.lock */,
 				07736C5E21CF42A200EE1476 /* Sources */,
 				07736C5F21CF42A200EE1476 /* Frameworks */,
 				07736C6021CF42A200EE1476 /* Resources */,
+				36C16DE2DBEE9BE8B9E32BE7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +156,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				07736C7021CF42A400EE1476 /* LaunchScreen.storyboard in Resources */,
+				07F36D2C21D0B62C00AE2827 /* tessdata in Resources */,
 				07736C6D21CF42A400EE1476 /* Assets.xcassets in Resources */,
 				07736C6B21CF42A200EE1476 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36C16DE2DBEE9BE8B9E32BE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Project Camouflage/Pods-Project Camouflage-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project Camouflage/Pods-Project Camouflage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0FC9D6433C0E3E46B658E22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project Camouflage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		07736C5E21CF42A200EE1476 /* Sources */ = {
@@ -197,6 +270,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -258,6 +332,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -280,10 +355,12 @@
 		};
 		07736C7521CF42A400EE1476 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 306951BBB1BA83E02FFA43D4 /* Pods-Project Camouflage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C3353ZR648;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Project Camouflage/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,10 +375,12 @@
 		};
 		07736C7621CF42A400EE1476 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A04733EF28EB5C87D760BB9 /* Pods-Project Camouflage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C3353ZR648;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Project Camouflage/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

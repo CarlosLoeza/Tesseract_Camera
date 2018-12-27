@@ -129,6 +129,7 @@
 				TargetAttributes = {
 					07736C6121CF42A200EE1476 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -358,9 +359,14 @@
 			baseConfigurationReference = 306951BBB1BA83E02FFA43D4 /* Pods-Project Camouflage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C3353ZR648;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Project\\ Camouflage",
+				);
 				INFOPLIST_FILE = "Project Camouflage/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -368,6 +374,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "C.Lo.Project-Camouflage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -378,9 +385,14 @@
 			baseConfigurationReference = 0A04733EF28EB5C87D760BB9 /* Pods-Project Camouflage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C3353ZR648;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Project\\ Camouflage",
+				);
 				INFOPLIST_FILE = "Project Camouflage/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
